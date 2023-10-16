@@ -32,3 +32,7 @@ The app's front-end is already deployed, but if you want to run the project in y
 - List Rendering
 
 ## Images:
+
+<p align="center">
+  <img src="./assets/print.jpg" alt="project print screen" width="400">  
+</p>

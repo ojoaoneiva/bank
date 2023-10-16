@@ -8,7 +8,7 @@ import Actions from '../../components/Actions';
 const list = [
   {
     id: 1,
-    label: "Boleto conta luz ",
+    label: "Boleto conta luz",
     value: "300,90",
     date: "17/09/2023",
     type: 0 //gastos
