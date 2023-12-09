@@ -1,0 +1,2 @@
+// Create a file named "config.js" with this line bellow, changing the url to your IP where the backend is running or the backend deploy
+export const API_URL = 'http://the-IP-where-the-backend-is-running';
