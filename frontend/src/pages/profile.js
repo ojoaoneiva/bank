@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     position: 'absolute',
     bottom: 40,
-    left: '20%',
+    left: '15%',
     padding: 10,
     width: '70%',
     alignItems: 'center',

@@ -65,8 +65,8 @@ export default function Home() {
   };
 
   const monthNames = [
-    'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
-    'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ'
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'Augost', 'September', 'Octuber', 'November', 'December'
   ];
   const currentMonth = monthNames[new Date().getMonth()];
 
@@ -132,9 +132,9 @@ export default function Home() {
 
       {transferHistory && transferHistory.length > 0
         && (<Moviments data={transferHistory[0]} fromUser={transferHistory[0]?.fromUser?.name} name={userName} />)}
-      {transferHistory && transferHistory.length > 0
+      {transferHistory && transferHistory.length > 1
         && (<Moviments data={transferHistory[1]} fromUser={transferHistory[1]?.fromUser?.name} name={userName} />)}
-      {transferHistory && transferHistory.length > 0
+      {transferHistory && transferHistory.length > 2
         && (<Moviments data={transferHistory[2]} fromUser={transferHistory[2]?.fromUser?.name} name={userName} />)}
 
       <StatusBar style="auto" />

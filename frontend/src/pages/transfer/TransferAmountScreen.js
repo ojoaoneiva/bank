@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 30,
-    marginTop: '40%'
+    marginTop: '30%'
   },
   subtitle: {
     fontSize: 18,
@@ -109,12 +109,12 @@ const styles = StyleSheet.create({
   input: {
     fontSize: 50,
     color: 'black',
-    margin: 5
+    margin: 4
   },
   amount: {
     alignItems: "center",
     flexDirection: "row",
-    marginTop: 20
+    marginTop: 10
   },
   close: {
     position: 'absolute',

@@ -1,7 +1,10 @@
 {
   "expo": {
     "extra": {
-      "API_BASE_URL": "http://192.168.15.125:3000" 
+      "API_BASE_URL": "http://192.168.15.125:3000",
+      "eas": {
+        "projectId": "8d717994-41ab-48d2-bbca-867c7f6696b9"
+      }
     },
     "name": "frontend",
     "slug": "frontend",
@@ -24,7 +27,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "bank.joaoneiva.com"
     },
     "web": {
       "favicon": "./assets/favicon.png"

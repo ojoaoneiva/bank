@@ -32,7 +32,7 @@ export default function Moviments({ data, name, fromUser }) {
                 </View>
                 <Text
                     style={fromUser !== name ? styles.value : styles.expences}>
-                    {fromUser !== name ? `R$${data.amount}` : `R$-${data.amount}`}
+                    {fromUser !== name ? `$${data.amount}` : `$-${data.amount}`}
                 </Text>
 
             </View>

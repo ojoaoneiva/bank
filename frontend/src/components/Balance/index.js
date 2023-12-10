@@ -9,7 +9,7 @@ export default function Balance({ saldo, showValue }) {
                 <Text style={styles.itemTitle}>Balance</Text>
                 {showValue ?
                     <View style={styles.content}>
-                        <Text style={styles.currencySymbol}>R$</Text>
+                        <Text style={styles.currencySymbol}>$</Text>
                         <Text style={styles.balance}>{saldo}</Text>
                     </View> :
                     <View style={styles.content}>
