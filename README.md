@@ -1,87 +1,91 @@
-# pokemon
+# Bank
 
 <p align="center">
-  <img src="./frontend/assets/1.gif" alt="project gif" width="200">
-  <img src="./frontend/assets/2.gif" alt="project gif" width="200">
-  <img src="./frontend/assets/3.gif" alt="project gif" width="200">
+  <img src="./frontend/assets/github/bank1.gif" alt="project gif" width="200">
+  <img src="./frontend/assets/github/bank2.gif" alt="project gif" width="200">
+  <img src="./frontend/assets/github/bank3.gif" alt="project gif" width="200">
 </p>
 
-Documentação da API [aqui](https://documenter.getpostman.com/view/27685475/2s9YR9aDTu)
+API Documentation [Here](https://documenter.getpostman.com/view/27685475/2s9YR9aDTu)
 
-## Sobre:
-O objetivo do projeto é construir uma aplicação full stack contendo um backend com uma API Rest e um CRUD (com funcionalidades e acesso protegido pelo JWT) para criar, ler, editar e deletar pokemons e integrar com a API pública "https://pokeapi.co/", além de um frontend mobile-first que consome a API.
+## About:
+Fullstack mobile app that simulates a fintech platform for receiving and transferring money. The backend API can create and log in users, transfer funds between users, and store transaction records. The frontend allows users to organize transfers with filters and search functionality. Additionally, there is a settings page where users can edit and delete their accounts.
 
-## Funcionalidades:
-- [x]  <strong>Buscar dados da API pública:</strong> Criar endpoint GET que consuma a api de listagem de pokémons com paginação de 10 por página (limit e offset) e retorne os dados.
-- [x]  <strong>Buscar dados da API pública pelo id:</strong> Criar endpoint GET que consuma a api com os dados de um pokémon pelo id e retorne os dados.
-- [x]  <strong>Criar dados na API:</strong> Criar endpoint POST que permita a criação de um pokémon customizado com os atributos a seguir e salvar no banco de dados. atributos: id (number - auto increment), name, height, weight. Os dados de entrada são validados quanto a sua tipagem e se não forem nulos.
-- [x]  <strong>Editar dados da API:</strong> Criar endpoint PUT que permita atualizar os atributos de um pokémon customizado no banco de dados pelo ID. Somente quem criou o Pokemon pode editá-lo.
-- [x]  <strong>Excluir dados da API:</strong> Criar um endpoint DELETE que permita excluir um pokémon customizado do banco de dados pelo ID. Somente quem criou o Pokemon pode deletá-lo.
-- [x]  <strong>Buscar dados da API:</strong> Criar um endpoint GET que retorna todos os pokémons customizados do banco de dados com paginação de 10 por página. 
-- [x]  <strong>Criar documentação para API:</strong> Criar uma collection no Postman ou Insomnia com os endpoint para realizar os testes. [documentação](https://documenter.getpostman.com/view/27685475/2s9YR9aDTu)
-- [x]  <strong>Frontend que consome API:</strong> Desenvolver um aplicativo React native que consuma essa API
-- [x]   <strong>Login e Signup</strong> Criar um usuário ou Entrar em uma conta existente de usuário, validar email e senha e gerar token JWT de acesso para funcionalidades como visualizar, criar, editar e deletar pokemons.
+## Functionalities:
+- [x]  <strong>Frontend que consome API:</strong> React native frontend app that consumes the backend API
+- [x]   <strong>Login:</strong> Users can log in by entering valid email and password credentials. The app authenticates the data, generates an access JWT token, and navigates to the main page.
+- [x]  <strong>Sign up Page:</strong> Users can create an account using a unique email. The app generates an access JWT token and directs the user to the main page.
+- [x]  <strong>Transfer funds:</strong> Users can transfer funds to other users by specifying the recipient's email and the amount of funds.
+- [x]  <strong>Store transaction records:</strong> Each transaction record is stored, displaying the sender, receiver, creation timestamp, amount, and transaction ID.
+- [x]  <strong>Edit and delete User info:</strong> Users can update their email and/or name and have the option to delete their account.
+- [x]  <strong>Data filters and search functionality:</strong> The frontend provides filters (received and sent) and a search function based on the user's name for organizing transactions.
+- [x]  <strong>Create API Documentation:</strong> Create a collection on Postman with the endpoints and all instruction to test the API. [documentation here](https://documenter.getpostman.com/view/27685475/2s9YR9aDTu)
 
-## Como rodar a aplicação backend localmente:
+
+## How to run the back-end project:
 
 ```bash
-# Clone o repositorio do projeto:
-    git clone https://github.com/ojoaoneiva/pokemon.git
+# Clone the project's repository (if not already done in the front-end instructions):
+    git clone https://github.com/ojoaoneiva/bank.git
 
-# Entre na pasta backend:
-    cd pokemon
+# Enter the back-end paste:
+    cd bank
     cd backend
 
-# Crie um arquivo .env nos moldes do .env.example com as varáveis de ambiente:
+# Create a ".env" file on the back-end folder, using the instructions on the ".env.example" file:
 
-# Execute as migraçoes do banco de dados:
+# Run the database migrations::
     npx typeorm migration:run
     
-# Instale as dependencias da aplicação:
+# Install the app's dependencies:
     npm i
 
-# Inicie a aplicação:
+# Run the application in developpement mode:
     npm start
 
-# O servidor irá iniciar no localhost:3000
-
+# The server will start on localhost:3003
+# The API documenter is here: https://documenter.getpostman.com/view/27685475/2s9YXmVzVu
 ```
 
-## Como rodar a aplicação frontend localmente:
+## How to run the front-end project:
 
 ```bash
-# Com o repositório já clonado e app backend funcionando:
+# Clone the project's repository (if not already done in the back-end instructions):
 
-# Entre na pasta frontend:
+# Enter the front-end paste:
     cd ..
-    cd frontend
+    cd front-end
 
-# Instale as dependencias da aplicação:
+# Install the app's dependencies:
     npm i
 
-# Crie um arquivo config.js nos moldes do arquivo config.example.js para inserir variável de ambiente:
+# Create a config.js file following the example of the config.example.js file to change where the backend API is running:
 
-# Inicie a aplicação:
-    npx expo start
+# Run the application:
+    npx expo
 
-# O servidor irá iniciar no Expo Development Server.
-# Utilize o app Expo Go no celular android ou ios para ler o qrcode ou utilize um emulador para visualização no desketop
-# Leia documentação da API para entender as requisições de cada endpoint.
+# The server will start on Expo Development.
+# Use the Expo Go app on your Android or iOS mobile device to scan the QR code, or use an emulator for desktop viewing.
+# Read the API documentation to understand the requests for each endpoint.
 
 ```
 
-## Tecnologias usadas:
-- NodeJS
+## Technologies used:
+- React Native
 - NestJS
+- Postgres
+- NodeJS
 - Typescript
 - JWT
-- Postgres
+- Axios
 - Typeorm
-- React Native
 - Postman
-- Git
 
 ## Imagens:
 <p align="center">
-  <img src="./frontend/assets/mobile.png" alt="project gif" width="700">
+  <img src="./frontend/assets/github/1.jpg" alt="project gif" width="700">
+  <img src="./frontend/assets/github/2.jpg" alt="project gif" width="700">
+  <img src="./frontend/assets/github/3.jpg" alt="project gif" width="700">
+  <img src="./frontend/assets/github/4.jpg" alt="project gif" width="700">
+  <img src="./frontend/assets/github/5.jpg" alt="project gif" width="700">
 </p>
