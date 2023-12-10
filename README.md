@@ -83,9 +83,9 @@ Fullstack mobile app that simulates a fintech platform for receiving and transfe
 
 ## Imagens:
 <p align="center">
-  <img src="./frontend/assets/github/1.jpg" alt="project gif" width="700">
-  <img src="./frontend/assets/github/2.jpg" alt="project gif" width="700">
-  <img src="./frontend/assets/github/3.jpg" alt="project gif" width="700">
-  <img src="./frontend/assets/github/4.jpg" alt="project gif" width="700">
-  <img src="./frontend/assets/github/5.jpg" alt="project gif" width="700">
+  <img src="./frontend/assets/github/1.jpg" alt="project gif" width="250">
+  <img src="./frontend/assets/github/2.jpg" alt="project gif" width="250">
+  <img src="./frontend/assets/github/3.jpg" alt="project gif" width="250">
+  <img src="./frontend/assets/github/4.jpg" alt="project gif" width="250">
+  <img src="./frontend/assets/github/5.jpg" alt="project gif" width="250">
 </p>
