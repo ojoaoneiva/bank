@@ -12,7 +12,7 @@ API Documentation [Here](https://documenter.getpostman.com/view/27685475/2s9Ykhg
 Fullstack mobile app that simulates a fintech platform for receiving and transferring money. The backend API can create and log in users, transfer funds between users, and store transaction records. The frontend allows users to organize transfers with filters and search functionality. Additionally, there is a settings page where users can edit and delete their accounts.
 
 ## Functionalities:
-- [x]  <strong>Frontend que consome API:</strong> React native frontend app that consumes the backend API
+- [x]  <strong>Frontend consuming API:</strong> React native frontend app that consumes the backend API with axios
 - [x]   <strong>Login:</strong> Users can log in by entering valid email and password credentials. The app authenticates the data, generates an access JWT token, and navigates to the main page.
 - [x]  <strong>Sign up Page:</strong> Users can create an account using a unique email. The app generates an access JWT token and directs the user to the main page.
 - [x]  <strong>Transfer funds:</strong> Users can transfer funds to other users by specifying the recipient's email and the amount of funds.
