@@ -6,7 +6,7 @@
   <img src="./frontend/assets/github/bank3.gif" alt="project gif" width="200">
 </p>
 
-API Documentation [Here](https://documenter.getpostman.com/view/27685475/2s9YR9aDTu)
+API Documentation [Here](https://documenter.getpostman.com/view/27685475/2s9YkhgPNc)
 
 ## About:
 Fullstack mobile app that simulates a fintech platform for receiving and transferring money. The backend API can create and log in users, transfer funds between users, and store transaction records. The frontend allows users to organize transfers with filters and search functionality. Additionally, there is a settings page where users can edit and delete their accounts.
@@ -19,7 +19,7 @@ Fullstack mobile app that simulates a fintech platform for receiving and transfe
 - [x]  <strong>Store transaction records:</strong> Each transaction record is stored, displaying the sender, receiver, creation timestamp, amount, and transaction ID.
 - [x]  <strong>Edit and delete User info:</strong> Users can update their email and/or name and have the option to delete their account.
 - [x]  <strong>Data filters and search functionality:</strong> The frontend provides filters (received and sent) and a search function based on the user's name for organizing transactions.
-- [x]  <strong>Create API Documentation:</strong> Create a collection on Postman with the endpoints and all instruction to test the API. [documentation here](https://documenter.getpostman.com/view/27685475/2s9YR9aDTu)
+- [x]  <strong>Create API Documentation:</strong> Create a collection on Postman with the endpoints and all instruction to test the API. [documentation here](https://documenter.getpostman.com/view/27685475/2s9YkhgPNc)
 
 
 ## How to run the back-end project:
@@ -44,7 +44,7 @@ Fullstack mobile app that simulates a fintech platform for receiving and transfe
     npm start
 
 # The server will start on localhost:3003
-# The API documenter is here: https://documenter.getpostman.com/view/27685475/2s9YXmVzVu
+# The API documenter is here: https://documenter.getpostman.com/view/27685475/2s9YkhgPNc
 ```
 
 ## How to run the front-end project:
@@ -83,9 +83,9 @@ Fullstack mobile app that simulates a fintech platform for receiving and transfe
 
 ## Imagens:
 <p align="center">
-  <img src="./frontend/assets/github/1.jpg" alt="project gif" width="250">
-  <img src="./frontend/assets/github/2.jpg" alt="project gif" width="250">
-  <img src="./frontend/assets/github/3.jpg" alt="project gif" width="250">
-  <img src="./frontend/assets/github/4.jpg" alt="project gif" width="250">
-  <img src="./frontend/assets/github/5.jpg" alt="project gif" width="250">
+  <img src="./frontend/assets/github/1.jpg" alt="project gif" width="200">
+  <img src="./frontend/assets/github/2.jpg" alt="project gif" width="200">
+  <img src="./frontend/assets/github/3.jpg" alt="project gif" width="200">
+  <img src="./frontend/assets/github/4.jpg" alt="project gif" width="200">
+  <img src="./frontend/assets/github/5.jpg" alt="project gif" width="200">
 </p>
